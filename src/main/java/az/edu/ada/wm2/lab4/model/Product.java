@@ -10,12 +10,10 @@ public class Product {
     private BigDecimal price;
     private LocalDate expirationDate;
 
-    // no-args constructor (id auto-generated)
     public Product() {
         this.id = UUID.randomUUID();
     }
 
-    // constructor without id (id auto-generated)
     public Product(String productName, BigDecimal price, LocalDate expirationDate) {
         this.id = UUID.randomUUID();
         this.productName = productName;
@@ -23,7 +21,6 @@ public class Product {
         this.expirationDate = expirationDate;
     }
 
-    // full constructor (for update)
     public Product(UUID id, String productName, BigDecimal price, LocalDate expirationDate) {
         this.id = id;
         this.productName = productName;
